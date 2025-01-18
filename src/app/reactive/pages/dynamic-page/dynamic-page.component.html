@@ -22,11 +22,17 @@
         <div class="col-sm-9">
 
             <div class="input-group">
-                <input class="form-control"
-                       placeholder="Add Favorite">
+                <input
+                  class="form-control"
+                  [formControl]="newFavorite"
+                  placeholder="Add Favorite"
+                >
 
-                <button class="btn btn-outline-primary"
-                        type="button">
+                <button
+                  class="btn btn-outline-primary"
+                  type="button"
+                  (click)="onAddToFavorites()"
+                >
                     Add Favorite
                 </button>
             </div>
